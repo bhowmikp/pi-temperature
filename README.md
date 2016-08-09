@@ -4,7 +4,7 @@ Methods to execute code
 =================================
 a) bash temp.sh &
 
-b) chmod +x temp.sh
+b) chmod +x temp.sh\n
    ./temp.sh &
    
 Current Use
