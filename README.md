@@ -9,6 +9,13 @@ a) If on PI with keyboard, mouse, monitor <br />
 
 b) SSH/ Remote Desktop (Ex - Putty) <br />
 nohup ./temp.sh &
+
+To stop the program running in background enter following commands in terminal: <br />
+jobs <br />
+kill %[process number]
+
+To view if code is still running in background enter following command in terminal: <br />
+jobs <br />
    
 Current Use
 =================================
