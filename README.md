@@ -2,14 +2,17 @@ Monitors the Raspberry Pi's temperature using the onboard sensor and puts that i
 
 Methods to execute code
 =================================
-a) bash temp.sh &
+chmod +x temp.sh <br />
 
-b) chmod +x temp.sh <br />
-   ./temp.sh &
+a) If on PI with keyboard, mouse, monitor
+./temp.sh &
+
+b) SSH/ Remote Desktop (Ex - Putty)
+nohup ./temp.sh &
    
 Current Use
 =================================
-Currently this code creates a file on my server which then can be viewed much easily.
+Currently this code creates a file on my server which can then be viewed much easily.
    
 Future Plans
 =================================
