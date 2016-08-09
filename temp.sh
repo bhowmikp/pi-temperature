@@ -1,13 +1,14 @@
 #!/bin/bash
 
-FILENAME="file.txt"
+FILENAME="html/temp.txt"
+START_TIME="00:00:00"
 INTERVAL=3600
 
 # infinite loop
 while true;
 do
     # starts measuiring temperature from midnight
-    if [ $(date +"%T") = "04:09:00" ];then
+    if [ $(date +"%T") = $START_TIME ];then
         # clears previous days info
         echo -ne "" > $FILENAME
 
@@ -35,7 +36,6 @@ do
                 echo -ne " - HIGH USE" >> $FILENAME
             fi;
 
-            # current cpu speed
             echo -ne " - Current CPU speed: $CURR_CPU kHz\n" >> $FILENAME
 
             sleep $INTERVAL
