@@ -4,10 +4,10 @@ Methods to execute code
 =================================
 chmod +x temp.sh <br />
 
-a) If on PI with keyboard, mouse, monitor
+a) If on PI with keyboard, mouse, monitor <br />
 ./temp.sh &
 
-b) SSH/ Remote Desktop (Ex - Putty)
+b) SSH/ Remote Desktop (Ex - Putty) <br />
 nohup ./temp.sh &
    
 Current Use
