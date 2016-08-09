@@ -1,6 +1,7 @@
 #!/bin/bash
 
 FILENAME="file.txt"
+INTERVAL=3600
 
 # infinite loop
 while true;
@@ -37,7 +38,7 @@ do
             # current cpu speed
             echo -ne " - Current CPU speed: $CURR_CPU kHz\n" >> $FILENAME
 
-            sleep 3600
+            sleep $INTERVAL
         done
     else
         # checks if correct time every second
