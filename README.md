@@ -3,7 +3,7 @@ Monitors the Raspberry Pi's temperature using the onboard sensor and puts that i
 Methods to execute code
 =================================
 a) bash temp.sh &
-=================================
+
 b) chmod +x temp.sh
    ./temp.sh &
    
