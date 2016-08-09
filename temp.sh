@@ -26,7 +26,7 @@ do
             CURR_CPU=$(sudo cat /sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_cur_freq)
             MIN_CPU=$(sudo cat /sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_min_freq)
             MAX_CPU=$(sudo cat /sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_max_freq)
-            CURR_CPU_PERCENT=`expr $(((( CURR_CPU / ( MAX_CPU - MIN_CPU )) - 1) * 100 ))`
+            CURR_CPU_PERCENT=`expr $(((( CURR_CPU - MIN_CPU ) / (MAX_CPU - MIN_CPU )) * 100))`
 
             echo -ne " - Current CPU usage: $CURR_CPU_PERCENT% - Current CPU speed: $CURR_CPU kHz\n" >> $FILENAME
 
