@@ -25,18 +25,10 @@ do
             # cpu speed
             CURR_CPU=$(sudo cat /sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_cur_freq)
             MIN_CPU=$(sudo cat /sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_min_freq)
-            COUNT=`expr $CURR_CPU - $MIN_CPU`
+            MAX_CPU=$(sudo cat /sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_max_freq)
+            CURR_CPU_PERCENT=`expr $(((( CURR_CPU / ( MAX_CPU - MIN_CPU )) - 1) * 100 ))`
 
-            # determine cpu usage
-            if [ $COUNT -eq 0 ];then
-                echo -ne " - IDLE" >> $FILENAME
-            elif [ $COUNT -gt 0 ] && [ $COUNT -lt 2000 ];then
-                echo -ne " - MILD USE" >> $FILENAME
-            else
-                echo -ne " - HIGH USE" >> $FILENAME
-            fi;
-
-            echo -ne " - Current CPU speed: $CURR_CPU kHz\n" >> $FILENAME
+            echo -ne " - Current CPU usage: $CURR_CPU_PERCENT% - Current CPU speed: $CURR_CPU kHz\n" >> $FILENAME
 
             sleep $INTERVAL
         done
