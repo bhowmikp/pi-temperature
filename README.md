@@ -2,11 +2,11 @@ Monitors the Raspberry Pi's temperature using the onboard sensor and puts that i
 
 Methods to execute code
 =================================
-a) If on PI with keyboard, mouse, monitor <br />
+a) If on PI with keyboard, mouse, monitor enter following commands in terminal: <br />
 chmod +x temp.sh <br />
 ./temp.sh &
 
-b) SSH/ Remote Desktop (Ex - Putty) <br />
+b) SSH/ Remote Desktop (Ex - Putty) enter following commands in terminal: <br />
 chmod +x temp.sh <br />
 nohup ./temp.sh &
 
