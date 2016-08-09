@@ -6,10 +6,6 @@ a) If on PI with keyboard, mouse, monitor enter following commands in terminal: 
 chmod +x temp.sh <br />
 ./temp.sh &
 
-b) SSH/ Remote Desktop (Ex - Putty) enter following commands in terminal: <br />
-chmod +x temp.sh <br />
-nohup ./temp.sh &
-
 To stop the program running in background enter following commands in terminal: <br />
 jobs <br />
 kill %[process number]
