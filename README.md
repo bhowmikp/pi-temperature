@@ -2,12 +2,12 @@ Monitors the Raspberry Pi's temperature using the onboard sensor and puts that i
 
 Methods to execute code
 =================================
-chmod +x temp.sh <br />
-
 a) If on PI with keyboard, mouse, monitor <br />
+chmod +x temp.sh <br />
 ./temp.sh &
 
 b) SSH/ Remote Desktop (Ex - Putty) <br />
+chmod +x temp.sh <br />
 nohup ./temp.sh &
 
 To stop the program running in background enter following commands in terminal: <br />
