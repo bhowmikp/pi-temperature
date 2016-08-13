@@ -1,10 +1,10 @@
-Monitors the Raspberry Pi's temperature using the onboard sensor and puts that in a file.
+Monitors the Raspberry Pi's(Model 3B) temperature using the onboard sensor and puts the information in a file.
 
 Methods to execute code
 =================================
 a) If on PI with keyboard, mouse, monitor enter following commands in terminal: <br />
-chmod +x temp.sh <br />
-./temp.sh &
+chmod +x temp.bash <br />
+./temp.bash &
 
 To stop the program running in background enter following commands in terminal: <br />
 jobs <br />
