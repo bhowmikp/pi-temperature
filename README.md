@@ -13,16 +13,16 @@ A step by step series of examples that tell you have to get a development env ru
 Say what the step will be
 
 ```
-a) Enter following commands in terminal: <br />
-chmod +x temp.bash <br />
+a) Enter following commands in terminal:
+chmod +x temp.bash
 ./temp.bash &
 
-To stop the program running in background enter following commands in terminal: <br />
-jobs <br />
+To stop the program running in background enter following commands in terminal:
+jobs
 kill %[process number]
 
-To view if code is still running in background enter following command in terminal: <br />
-jobs <br />
+To view if code is still running in background enter following command in terminal: 
+jobs
 ```
 
 ### Future Plans
