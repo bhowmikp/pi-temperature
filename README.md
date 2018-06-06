@@ -1,3 +1,5 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
 # Pi_Temperature
 Monitors the Raspberry Pi's(Model 3B) temperature using the onboard sensor and puts the information in a file. Temperature and cpu speed are recorded to determine, board usage is effecting temperrature. Intention of the project was to find a co-relation between the temperature of board and room temperature and then use the temperature of the board to predict room temperature.
 
